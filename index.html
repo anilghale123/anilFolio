@@ -124,7 +124,7 @@
         </ul>
     </section>
 
-
+    <div class="contact">
     <div class="text">Contact Me</div>
     <form method="post" action="https://script.google.com/macros/s/AKfycbzBGRPEY3tyOU2PcNNrg1sAuS1Ie4cYUutwmE3oWKNLTgL1RC3u_CQrmpHFOMq5oc0W/exec"  onsubmit="submitForm(event)">
         <div class="fields">
@@ -149,6 +149,7 @@
             <button type="submit">Send message</button>
         </div>
     </form>
+</div>
 </div>
 
 
@@ -237,6 +238,24 @@ gsap.from(".container",
     opacity: 0, 
     y: -50,
      ease: "power2.out" });
+
+
+     gsap.set(".contact", { opacity: 0, y: 30 });
+
+// Animate each skill item with stagger effect
+gsap.utils.toArray(".contact").forEach((item, index) => {
+    gsap.to(item, {
+        opacity: 1,
+        y: 0,
+        duration: 0.5,
+        scrollTrigger: {
+            trigger: item,
+            start: "top 80%", // Adjust the start position as needed
+            toggleActions: "play none none none",
+            stagger: 0.2 // Adjust the stagger amount as needed
+        }
+    });
+});
 
 </script>
 </body>
