@@ -64,7 +64,8 @@ p {
     flex-wrap: wrap;
     justify-content: flex-start; /* Adjust alignment to start */
     gap: 20px;
-    margin-top: 250px
+    margin-top: 250px;
+    margin-left: -100px;
 }
 
 .image-container {
@@ -78,6 +79,7 @@ p {
 .image-container img {
     width: 500px;
     height: 300px;
+    
     transition: transform 0.3s ease;
 }
 
@@ -233,7 +235,7 @@ margin-top: 20px;
 
 button {
 padding: 10px 20px;
-background-color: #007bff;
+background-color: green;
 color: #fff;
 border: none;
 border-radius: 5px;

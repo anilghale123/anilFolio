@@ -19,19 +19,23 @@
 
 <main>
     <div class="about">
-        <p>My name is Anil Ghale and I am a highly motivated and experienced web developer with a strong background
-            in various programming languages and technologies. I have a proven track record of delivering high-quality,
-            visually appealing and user-friendly websites and web applications.
-
-            My skillset includes proficiency in HTML, CSS, JavaScript, and PHP, which I use to create dynamic and
-            responsive front-end designs. I also have experience with back-end programming languages such as C++, C,
-            and C#, which allows me to create robust and efficient server-side logic. In addition, I have a solid
-            understanding of database management systems such as MySQL and SQL Server, and can efficiently design and
-            maintain databases to support web applications.
-        </p>
-
-        <img src="images/a.jpg" alt="">
+        <div class="content">
+            <p>My name is Anil Ghale and I am a highly motivated and experienced web developer with a strong background
+                in various programming languages and technologies. I have a proven track record of delivering high-quality,
+                visually appealing and user-friendly websites and web applications.
+    
+                My skillset includes proficiency in HTML, CSS, JavaScript, and PHP, which I use to create dynamic and
+                responsive front-end designs. I also have experience with back-end programming languages such as C++, C,
+                and C#, which allows me to create robust and efficient server-side logic. In addition, I have a solid
+                understanding of database management systems such as MySQL and SQL Server, and can efficiently design and
+                maintain databases to support web applications.
+            </p>
+        </div>
+        <div class="image">
+            <img src="images/a.jpg" alt="">
+        </div>
     </div>
+    
 
     <div class="project">
         <h1>My Work</h1>
@@ -185,8 +189,8 @@
     const projectBoxes = gsap.utils.toArray('.project .container .image-container');
     projectBoxes.forEach(element => {
         gsap.to(element, {
-            x: 500,
-            y: -100,
+            x: 700,
+            y: -200,
             scale: 1,
             duration: 4,
             scrollTrigger: {
