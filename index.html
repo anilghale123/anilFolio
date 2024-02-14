@@ -24,11 +24,7 @@
                 in various programming languages and technologies. I have a proven track record of delivering high-quality,
                 visually appealing and user-friendly websites and web applications.
     
-                My skillset includes proficiency in HTML, CSS, JavaScript, and PHP, which I use to create dynamic and
-                responsive front-end designs. I also have experience with back-end programming languages such as C++, C,
-                and C#, which allows me to create robust and efficient server-side logic. In addition, I have a solid
-                understanding of database management systems such as MySQL and SQL Server, and can efficiently design and
-                maintain databases to support web applications.
+                
             </p>
         </div>
         <div class="image">
@@ -231,7 +227,9 @@
     const aboutBoxes = gsap.utils.toArray('.about > *');
     aboutBoxes.forEach(element => {
         gsap.to(element, {
-            x: 400,
+            x: 100,
+            y: 500,
+           
             duration: 4,
             scrollTrigger: {
                 trigger: element,

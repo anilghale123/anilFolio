@@ -5,12 +5,14 @@ body {
     font-family: Arial, sans-serif;
     color: white;
 }
-header{
+
+header {
     display: flex;
     flex-direction: column;
-    
+
 
 }
+
 .heading {
     height: 100vh;
     width: 1430px;
@@ -24,12 +26,7 @@ header{
 
 h1 {
     color: white;
-    /* text-align: center; */
     font-size: 100px;
-    /* align-self: center; */
-   
-    /* align-items: center; */
-    /* padding-top: 50px; */
 }
 
 h1:hover {
@@ -42,19 +39,22 @@ p {
 }
 
 .about {
-    
+
     width: 700px;
     height: 100vh;
 }
+
 .about {
     display: flex;
-    align-items: center; /* Vertically center content */
+    align-items: center;
+    /* Vertically center content */
     flex-direction: row;
 
 }
 
 .content {
-    flex: 1; /* Take remaining space */
+    flex: 1;
+    /* Take remaining space */
 }
 
 .image {
@@ -62,7 +62,7 @@ p {
 }
 
 
-.about img{
+.about img {
     height: 280px;
     width: 250px;
     object-fit: cover;
@@ -80,9 +80,10 @@ p {
     flex-direction: column;
     flex-wrap: wrap;
     /* background-color: pink; */
-    
+
 }
-.project h1{
+
+.project h1 {
     text-align: center;
     align-self: center;
 }
@@ -90,7 +91,8 @@ p {
 .project .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start; /* Adjust alignment to start */
+    justify-content: flex-start;
+    /* Adjust alignment to start */
     gap: 20px;
     margin-top: 250px;
     margin-left: -100px;
@@ -98,8 +100,10 @@ p {
 
 .image-container {
     position: relative;
-    width: 100%; /* Occupy full width */
-    height: auto; /* Auto height */
+    width: 100%;
+    /* Occupy full width */
+    height: auto;
+    /* Auto height */
     overflow: hidden;
     border-radius: 10px;
 }
@@ -107,7 +111,7 @@ p {
 .image-container img {
     width: 500px;
     height: 300px;
-    
+
     transition: transform 0.3s ease;
 }
 
@@ -124,7 +128,7 @@ p {
     align-items: center;
     opacity: 0;
     transition: opacity 0.2s ease;
-   
+
 }
 
 .image-container:hover .image-title {
@@ -144,104 +148,100 @@ p {
     flex-wrap: wrap;
     justify-content: center;
 
-width: 180vh;
-height: 100vh;
+    width: 180vh;
+    height: 100vh;
 
 
 
-background-color: black;
+    background-color: black;
 }
 
-.skills-section h2{
-color: white;
-font-size: 40px;
-margin: 0;
-padding: 0;
+.skills-section h2 {
+    color: white;
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
 
 }
+
 .skill-list {
-    
-list-style-type: none;
-padding: 0;
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
+
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
 }
 
-.skills-section .skill-list img{
-height: 100px;
-width: 100px;
+.skills-section .skill-list img {
+    height: 100px;
+    width: 100px;
 }
 
 .skill-item {
-/* background-color: #3498db; */
-color: white;
-font-size: 16px;
-padding: 10px 20px;
-margin: 10px;
-border-radius: 5px;
-position: relative;
-overflow: hidden;
-cursor: pointer;
-transition: background-color 0.3s ease;
+    /* background-color: #3498db; */
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .skill-item:hover {
-background-color: orange;
-color: black;
+    background-color: orange;
+    color: black;
 }
 
 .skill-item:before {
-content: '';
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 
-background-size: 50%;
-opacity: 0.5;
-transform: scale(0);
-transition: transform 0.3s ease;
+    background-size: 50%;
+    opacity: 0.5;
+    transform: scale(0);
+    transition: transform 0.3s ease;
 }
 
 .skill-item:hover:before {
-transform: scale(1);
+    transform: scale(1);
 }
 
-
-
-
-
-.contact{
+.contact {
     width: 100%;
     background-color: black;
 }
 
-
 .text {
-font-size: 64px;
-font-weight: bold;
+    font-size: 64px;
+    font-weight: bold;
 
-text-align: center;
+    text-align: center;
 
 }
 
 
 .fields {
 
-align-items: center;
+    align-items: center;
 }
 
 .field {
-width: calc(50% - 10px);
-margin-bottom: 10px;
-align-items: center;
-justify-content: center;
+    width: calc(50% - 10px);
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
 }
 
-input{
+input {
     height: 50px;
     width: 250px;
     border-radius: 20px;
@@ -251,40 +251,41 @@ input{
 }
 
 textarea {
-resize: none;
-border-radius: 15px;
-text-align: center;
-margin-left: 103%;
-margin-top: 12px;
+    resize: none;
+    border-radius: 15px;
+    text-align: center;
+    margin-left: 103%;
+    margin-top: 12px;
 
 }
-.subject{
+
+.subject {
     margin-top: -178px;
 }
 
-.name{
+.name {
     margin-top: 30px;
 }
 
 .button-area {
-margin-top: 20px;
+    margin-top: 20px;
 }
 
 button {
-padding: 10px 20px;
-background-color: green;
-color: #fff;
-border: none;
-border-radius: 5px;
-cursor: pointer;
-margin-left: 580px;
-font-size: 20px;
-margin-bottom: 20px;
-transition: background-color 0.3s ease-in-out;
+    padding: 10px 20px;
+    background-color: green;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 580px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease-in-out;
 }
 
 button:hover {
-background-color: #0056b3;
+    background-color: #0056b3;
 }
 
 
@@ -337,15 +338,77 @@ footer {
 }
 
 
-@media  (max-width: 600px) {
+@media (max-width: 600px) {
 
-    .contact{
-    width: 370%;
-    background-color: black;
-}
-  
- footer{
-    width: 390%;
-    background-color: black;
- }
+    .heading{
+        height: 370vh;
+    }
+    .heading h1{
+        font-size: 60vw;
+    }
+
+    .about{
+        height: 200vh;
+        width: 190vh;
+        /* background-color: pink; */
+    }
+
+    .about .content{
+        font-size: 60px;
+        font-weight: 100;
+     
+    }
+    .about .image img{
+        height: 500px;
+        width: 500px;
+    }
+
+
+
+   .project{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 610vh;
+    width: 210vh;
+    margin-top: 300px;
+    /* background-color: pink; */
+   }
+
+   .project h1{
+    font-size: 160px;
+    margin-left: 200px;
+    
+   }
+
+   .project .container{
+    margin-left: -1000px;
+    margin-top: 450px;
+    
+   }
+
+   .project .container img{
+    height: 600px;
+    width: 800px;
+   }
+
+
+   .skills-section{
+    height: 100vh;
+    width: 219vh;
+    /* background-color: pink; */
+   }
+
+
+    .contact {
+        margin-top: 150px;
+        width: 370%;
+        background-color: black;
+    }
+
+    footer {
+       margin-top: 100px;
+        width: 390%;
+        background-color: black;
+    }
 }
